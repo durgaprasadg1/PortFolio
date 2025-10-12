@@ -4,7 +4,7 @@ import About from './component/About';
 
 import './App.css'
 import Navbar from './component/Navbar';
-import Contact from './component/Contact';
+import Contact from './component/contact'
 import Projects from './component/Projects';
 
 const router = createBrowserRouter([
