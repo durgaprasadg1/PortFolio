@@ -1,10 +1,10 @@
-const email = import.meta.env.VITE_EMAIL;
 import { Link } from 'react-router-dom'
+const email = import.meta.env.VITE_EMAIL || 'you@example.com'
 
 const Homepage = () => {
   return (
     
-    <main className="min-h-screen h-4 text-white">
+  <main className="min-h-screen text-white">
       <section className="container mx-auto px-6 py-20 flex flex-col lg:flex-row items-center gap-12">  
         <div className="w-full lg:w-1/2">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Hi, I'm Durgaprasad</h1>
@@ -17,7 +17,9 @@ const Homepage = () => {
         </div>
 
         <div className="w-full lg:w-1/2 flex justify-center">
-            <img  className='rounded-full  w-90 h-full'  src="/Ubhya.jpg" alt="Durgaprasad" />
+          <div className="w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden shadow-lg">
+            <img src="/Ubhya.jpg" alt="Durgaprasad" loading="lazy" className="w-full h-full object-cover block" />
+          </div>
         </div>
       </section>
 
