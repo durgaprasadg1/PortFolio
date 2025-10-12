@@ -4,7 +4,7 @@ import About from './component/About';
 
 import './App.css'
 import Navbar from './component/Navbar';
-import Contact from './component/contact'
+import Contact from './component/Contact'
 import Projects from './component/Projects';
 
 const router = createBrowserRouter([
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
     element:<>
         <Navbar />
         <Contact/>
-    </>
+        </>
   },
   {
     path:"/project",
