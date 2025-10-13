@@ -5,7 +5,7 @@ import About from './component/About';
 import './App.css'
 import Navbar from './component/Navbar';
 import Contact from './component/Contact'
-import Projects from './component/Projects';
+import Projects from './component/projects';
 
 const router = createBrowserRouter([
     {
