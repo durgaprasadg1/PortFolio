@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 const email = import.meta.env.VITE_EMAIL;
 
-
 const ProjectCard = ({ title, desc, link }) => (
   <article className="shadow-slate-500 rounded-lg p-4  hover:shadow-md transition bg-gray-600/80">
     <h4 className="font-semibold mb-2 text-white">{title}</h4>
@@ -29,6 +28,7 @@ const Projects = () => {
           ))}
         </div>
 
+
         <div className="mt-8 text-indigo-200">
          <Link to="/" className="underline">Back to home</Link>
         </div>
@@ -39,5 +39,4 @@ const Projects = () => {
   )
 }
 
-export default Projects;
-
+export default Projects
