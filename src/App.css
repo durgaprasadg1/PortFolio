@@ -1,1 +1,42 @@
+/* Page enter animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+.page-enter {
+  animation: fadeUp 420ms ease both;
+}
+
+/* Navbar link underline + hover scale */
+.nav-link {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  transition: width 260ms ease;
+  border-radius: 2px;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* keep page content readable under fixed navbar */
+main.page-enter {
+  padding-bottom: 40px;
+}

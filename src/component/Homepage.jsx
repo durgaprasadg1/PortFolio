@@ -27,7 +27,7 @@ const Homepage = () => {
         <h3 className="text-2xl font-semibold mb-6"> Projects</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <article className="border rounded-lg p-4 shadow-sm hover:shadow-md transition">
-            <h4 className="font-semibold mb-2">🥘 Messmate</h4>
+            <h4 className="font-semibold mb-2">🍱 Messmate</h4>
             <p className="text-sm text-white">Project to make the mess owner and student life easy.
 
             </p>

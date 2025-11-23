@@ -1,54 +1,65 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Homepage from './component/Homepage'
-import About from './component/About';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Homepage from "./component/Homepage";
+import About from "./component/About";
+import PageWrapper from "./component/PageWrapper";
 
-import './App.css'
-import Navbar from './component/Navbar';
-import Contact from './component/Contact'
-import Projects from './component/projects';
+import "./App.css";
+import Navbar from "./component/Navbar";
+import Contact from "./component/Contact";
+import Projects from "./component/projects";
 
 const router = createBrowserRouter([
-    {
+  {
     path: "/",
-    element:<>
+    element: (
+      <>
         <Navbar />
-        <Homepage/>
+        <PageWrapper>
+          <Homepage />
+        </PageWrapper>
       </>
-   
+    ),
   },
   {
-    path:"/about",
-    element:<>
-      <Navbar />
-      <About/>
-    </>
-  },
-  {
-    path:"/contact",
-    element:<>
+    path: "/about",
+    element: (
+      <>
         <Navbar />
-        <Contact/>
-        </>
+        <PageWrapper>
+          <About />
+        </PageWrapper>
+      </>
+    ),
   },
   {
-    path:"/project",
-    element:<>
-      <Navbar />
-      <Projects/>
-    </>
-  }
-  
-  ])
+    path: "/contact",
+    element: (
+      <>
+        <Navbar />
+        <PageWrapper>
+          <Contact />
+        </PageWrapper>
+      </>
+    ),
+  },
+  {
+    path: "/project",
+    element: (
+      <>
+        <Navbar />
+        <PageWrapper>
+          <Projects />
+        </PageWrapper>
+      </>
+    ),
+  },
+]);
 function App() {
-  
   return (
     <>
-         <RouterProvider router={router} />
-
+      <RouterProvider router={router} />
     </>
-   
-    
   );
 }
 
-export default App
+export default App;

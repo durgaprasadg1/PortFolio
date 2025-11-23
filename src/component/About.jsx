@@ -14,7 +14,13 @@ const About = () => {
           <div className="lg:col-span-1">
             <div className="bg-gray-600 text-white rounded-lg p-6 shadow">
               <h1 className="text-2xl font-bold mb-2">About Me</h1>
-              <p className="text-sm">Hi, I'm Durgaprasad — A Software Engineering Student at VIT , Pune. I am skilled at Java and have experience of MERN stack as I have developed the project using it. Now , I am learning new technology like Next JS to implement my logic and skill in more better way. I even love to solve the problem of DSA. I use Java for questions to solve. </p>
+              <p className="text-sm">Hello, I'm Durgaprasad, an enthusiastic Software Engineering student at VIT, Pune, dedicated to building scalable and efficient applications.
+
+My foundational expertise is in Java, which I actively leverage for both competitive programming (DSA) and backend development. I have hands-on, full-stack experience, having successfully developed and deployed a project.
+
+I am currently expanding my capabilities by mastering Next.js to build modern, high-performance user interfaces and further optimize my implementation skills.
+
+My commitment is to continuously integrate strong DSA problem-solving logic with cutting-edge technologies to deliver high-quality software solutions.</p>
             </div>
 
             <div className="mt-6">
@@ -38,11 +44,12 @@ const About = () => {
                 <SkillTag>Java</SkillTag>
                 <SkillTag>JavaScript (ES6+)</SkillTag>
                 <SkillTag>React</SkillTag>
-                <SkillTag>Node.js</SkillTag>
+                <SkillTag>NextJs</SkillTag>
                 <SkillTag>Python</SkillTag>
 
                 
-                  <SkillTag>Express</SkillTag>
+                 <SkillTag>Express</SkillTag>
+                 <SkillTag>Node JS</SkillTag>
                 <SkillTag>MongoDB</SkillTag>
                 <SkillTag>Tailwind CSS</SkillTag>
                 <SkillTag>C</SkillTag>
@@ -65,11 +72,11 @@ const About = () => {
             <br />
             <section>
               <h3 className="text-xl font-semibold mb-3">Achievements</h3>
-              <p className="text-white">SSC : <strong>91.40 %</strong> at Nutan English School , Gondia.
+              <p className="text-white">SSC : <strong>91.40 %</strong> at <strong> Nutan English School , Gondia.</strong>
               </p>
-              <p className="text-white">HSC : <strong>93.33 %</strong> at Mahavir Marwadi Junior College , Gondia.
+              <p className="text-white">HSC : <strong>93.33 %</strong> at <strong> Mahavir Marwadi Junior College , Gondia.</strong>
               </p>
-              <p className="text-white">FY : <strong>8.93 CGPA</strong> at VIT, Pune.
+              <p className="text-white">FY : <strong>8.93 CGPA</strong> at <strong> Vishwakarma Institute Of Technology, Pune.</strong>
               </p>
 
             </section>
